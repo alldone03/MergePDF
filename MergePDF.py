@@ -10,7 +10,7 @@ print(os.getcwd())
 
 
 def browseFiles():
-    file = fd.askopenfilenames(parent=window, title='Choose a File')
+    file = fd.askopenfilenames(parent=window, title='Pilih File')
     print(file)
     wkspFldr = os.path.dirname(os.path.abspath(file[0]))
     pdfs = file
@@ -28,12 +28,12 @@ def browseFiles():
 
 
 window = Tk()
-window.title('File Explorer')
+window.title('Merge PDF')
 window.geometry("500x500")
 window.config(background="white")
 label_file_explorer = Label(window,
-                            text="File Explorer using Tkinter",
-                            width=100, height=4,
+                            text="Merge PDF",
+                            width=80, height=4,
                             fg="blue")
 button_explore = Button(window,
                         text="Browse Files",
